@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NomenWindow</class>
+ <widget class="QMainWindow" name="NomenWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Номенклатура - Прототипы</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #afc1b3;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">QStackedWidget {
+    background-color: #afc1b3;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="prototype1">
+       <layout class="QHBoxLayout" name="horizontalLayout_1">
+        <item>
+         <widget class="QWidget" name="leftPanel_1" native="true">
+          <layout class="QVBoxLayout" name="leftLayout_1">
+           <item>
+            <widget class="QPushButton" name="showListButton_1">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #7c9990;
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid #364541;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #637d75;
+}
+
+QPushButton:pressed {
+    background-color: #4d615b;
+}</string>
+             </property>
+             <property name="text">
+              <string>Список объектов</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="objectsList_1">
+             <property name="styleSheet">
+              <string notr="true">QListWidget {
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+QListWidget::item:selected {
+    background-color: #7c9990;
+    color: white;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Объект 1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Объект 2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Объект 3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Объект 4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Объект 5</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="rightPanel_1" native="true">
+          <layout class="QVBoxLayout" name="rightLayout_1">
+           <item>
+            <widget class="QLabel" name="imageLabel_1">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 25px;
+    color: black;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Здесь будет карта</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="textScrollArea_1">
+             <property name="styleSheet">
+              <string notr="true">QScrollArea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+QScrollArea &gt; QWidget &gt; QWidget {
+    background-color: #f8f8f8;
+}</string>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_1">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>300</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="textLabel_1">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 16px;
+    color: black;
+    padding: 15px;
+    background-color: #f8f8f8;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Здесь будет описание выбранного объекта. Это может быть довольно длинный текст, который будет занимать несколько строк и потребует прокрутки для полного просмотра.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="prototype2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="styleSheet">
+           <string notr="true">QTabWidget::pane {
+    border: 1px solid gray;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+QTabBar::tab {
+    background-color: #7c9990;
+    color: white;
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #364541;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+QTabBar::tab:selected {
+    background-color: #637d75;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #8ab0a5;
+}</string>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="objectsTab">
+           <attribute name="title">
+            <string>Объекты</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QListWidget" name="objectsList_2">
+              <property name="styleSheet">
+               <string notr="true">QListWidget {
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+QListWidget::item:selected {
+    background-color: #7c9990;
+    color: white;
+}</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Объект 1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Объект 2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Объект 3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Объект 4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Объект 5</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="infoWidget" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="imageLabel_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>300</width>
+                   <height>300</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 20px;
+    color: black;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Изображение объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="textLabel_2">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 16px;
+    color: black;
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Описание выбранного объекта будет отображаться здесь.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="mapTab">
+           <attribute name="title">
+            <string>Карта</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="mapLabel">
+              <property name="minimumSize">
+               <size>
+                <width>600</width>
+                <height>400</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 25px;
+    color: black;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}</string>
+              </property>
+              <property name="text">
+               <string>Общая карта всех объектов</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="prototype3">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLabel" name="titleLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 24px;
+    font-weight: bold;
+    color: #364541;
+    padding: 10px;
+    background-color: #7c9990;
+    border-radius: 10px;
+    color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>Каталог объектов номенклатуры</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="styleSheet">
+           <string notr="true">QScrollArea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>854</width>
+             <height>673</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QFrame" name="card1">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame {
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="cardTitle1">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 18px;
+    font-weight: bold;
+    color: #364541;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Объект 1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardImage1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #666;
+    border: 1px dashed #999;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Изображение объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardDesc1">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Краткое описание первого объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="card2">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame {
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QLabel" name="cardTitle2">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 18px;
+    font-weight: bold;
+    color: #364541;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Объект 2</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardImage2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #666;
+    border: 1px dashed #999;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Изображение объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardDesc2">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Краткое описание второго объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="card3">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame {
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QLabel" name="cardTitle3">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 18px;
+    font-weight: bold;
+    color: #364541;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Объект 3</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardImage3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #666;
+    border: 1px dashed #999;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Изображение объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardDesc3">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Краткое описание третьего объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QFrame" name="card4">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame {
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QLabel" name="cardTitle4">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 18px;
+    font-weight: bold;
+    color: #364541;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Объект 4</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardImage4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #666;
+    border: 1px dashed #999;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Изображение объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="cardDesc4">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Краткое описание четвертого объекта</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

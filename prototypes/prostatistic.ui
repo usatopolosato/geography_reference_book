@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatisticsWindow</class>
+ <widget class="QMainWindow" name="StatisticsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>886</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Статистика</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #afc1b3;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_title">
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Georgia&quot;;
+color: black;
+background-color: #ebf0ec;
+border: 2px solid #77997f;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string>Статистика обучения</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: #afc1b3;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_prototype1">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget_top_1" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_top_1">
+           <item>
+            <widget class="QLabel" name="label_overall_chart_1">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Общая статистика
+(Прототип 1)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_middle_1" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_middle_1">
+           <item>
+            <widget class="QLabel" name="label_terms_chart_1">
+             <property name="minimumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Статистика по терминам
+(Прототип 1)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_geo_chart_1">
+             <property name="minimumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Географическая статистика
+(Прототип 1)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_bottom_1" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_bottom_1">
+           <item>
+            <widget class="QLabel" name="label_success_terms_chart_1">
+             <property name="minimumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Успешные термины
+(Прототип 1)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_hardest_chart_1">
+             <property name="minimumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>480</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Самые сложные термины
+(Прототип 1)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_prototype2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QWidget" name="widget_columns_2" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_columns_2">
+           <item>
+            <widget class="QWidget" name="widget_left_2" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_left_2">
+              <item>
+               <widget class="QLabel" name="label_chart1_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Прогресс обучения
+(Прототип 2)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_chart2_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Еженедельная активность
+(Прототип 2)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_right_2" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_right_2">
+              <item>
+               <widget class="QLabel" name="label_chart3_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Распределение по темам
+(Прототип 2)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_chart4_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Сравнение результатов
+(Прототип 2)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_bottom_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+          </property>
+          <property name="text">
+           <string>Сводная статистика
+(Прототип 2)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_prototype3">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QWidget" name="widget_top_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_top_3">
+           <item>
+            <widget class="QLabel" name="label_main_chart_3">
+             <property name="minimumSize">
+              <size>
+               <width>600</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Основные показатели
+(Прототип 3)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_side_3" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_side_3">
+              <item>
+               <widget class="QLabel" name="label_metric1_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Темп обучения
+(Прототип 3)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_metric2_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Точность
+(Прототип 3)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_bottom_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_bottom_3">
+           <item>
+            <widget class="QLabel" name="label_mini1_3">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Последние тесты
+(Прототип 3)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_mini2_3">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Рекомендации
+(Прототип 3)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_mini3_3">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #77997f;
+background-color: white;</string>
+             </property>
+             <property name="text">
+              <string>Цели
+(Прототип 3)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_controls" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_controls"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

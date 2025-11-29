@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TermsWindow</class>
+ <widget class="QMainWindow" name="TermsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Термины - Прототипы</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #afc1b3;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+
+      <!-- Прототип 1: Классический -->
+      <widget class="QWidget" name="page_1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QListWidget" name="listWidget_1">
+          <property name="styleSheet">
+           <string notr="true">background-color: #ccd9ce;
+font: 14pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Рельеф</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Горизонталь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Масштаб</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Азимут</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_image_1">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #ebf0ec;
+font: 16pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 20px;</string>
+            </property>
+            <property name="text">
+             <string>Изображение термина</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit_1">
+            <property name="styleSheet">
+             <string notr="true">background-color: #e6ede7;
+font: 12pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 10px;</string>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Georgia'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Описание термина появится здесь после выбора</p></body></html></string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- Прототип 2: С категориями -->
+      <widget class="QWidget" name="page_2">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_categories">
+            <property name="styleSheet">
+             <string notr="true">background-color: #ebf0ec;
+font: 14pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Категории:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listCategories">
+            <property name="styleSheet">
+             <string notr="true">background-color: #ccd9ce;
+font: 12pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Рельеф</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Картография</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Гидрография</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_terms">
+            <property name="styleSheet">
+             <string notr="true">background-color: #ebf0ec;
+font: 14pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Термины:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listTerms_2">
+            <property name="styleSheet">
+             <string notr="true">background-color: #ccd9ce;
+font: 12pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Горизонталь</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Склон</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Водораздел</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_image_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #ebf0ec;
+font: 14pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 15px;</string>
+            </property>
+            <property name="text">
+             <string>Изображение</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit_2">
+            <property name="styleSheet">
+             <string notr="true">background-color: #e6ede7;
+font: 12pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 10px;</string>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Georgia'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Выберите категорию и термин</p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- Прототип 3: Компактный -->
+      <widget class="QWidget" name="page_3">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QListWidget" name="listWidget_3">
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #ccd9ce;
+font: 12pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Рельеф</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Горизонталь</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Масштаб</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Азимут</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_image_3">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #ebf0ec;
+font: 12pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 10px;</string>
+              </property>
+              <property name="text">
+               <string>Картинка</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_3">
+              <property name="styleSheet">
+               <string notr="true">background-color: #e6ede7;
+font: 11pt "Georgia";
+border: 2px solid #77997f;
+border-radius: 5px;
+color: black;
+padding: 8px;</string>
+              </property>
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Georgia'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Описание термина</p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="pushButton_prev">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7a9a7f;
+    color: black;
+    border: 2px solid #435e47;
+    border-radius: 5px;
+    font: 12pt "Georgia";
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #709976;
+}
+QPushButton:pressed {
+    background-color: #597d5e;
+}</string>
+        </property>
+        <property name="text">
+         <string>← Прототип 1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_page">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt "Georgia";
+color: #2d4d33;
+background-color: #d4e6d9;
+border: 1px solid #77997f;
+border-radius: 15px;
+padding: 8px 20px;</string>
+        </property>
+        <property name="text">
+         <string>Прототип 1: Классический</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_next">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #8cad91;
+    color: black;
+    border: 2px solid #435e47;
+    border-radius: 5px;
+    font: 12pt "Georgia";
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #709976;
+}
+QPushButton:pressed {
+    background-color: #597d5e;
+}</string>
+        </property>
+        <property name="text">
+         <string>Прототип 2 →</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

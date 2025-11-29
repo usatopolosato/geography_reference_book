@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Термины - Прототипы</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #afc1b3;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_1">
+       <layout class="QHBoxLayout" name="horizontalLayout_1">
+        <item>
+         <widget class="QWidget" name="leftPanel_1" native="true">
+          <layout class="QVBoxLayout" name="leftLayout_1">
+           <item>
+            <widget class="QPushButton" name="showListButton_1">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #7c9990;
+    font-family: &quot;Georgia&quot;;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid #364541;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #637d75;
+}
+
+QPushButton:pressed {
+    background-color: #4d615b;
+    padding: 11px 19px 9px 21px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Список терминов</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="termsList_1">
+             <property name="visible">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QListWidget {
+    background-color: #e8f4f0;
+    border: 2px solid #364541;
+    border-radius: 10px;
+    font-family: &quot;Georgia&quot;;
+    font-size: 14px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Алгоритм</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Переменная</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Функция</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Массив</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="rightPanel_1" native="true">
+          <layout class="QVBoxLayout" name="rightLayout_1">
+           <item>
+            <widget class="QLabel" name="imageLabel_1">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;;
+    font-size: 25px;
+    color: black;
+    border: 2px solid #364541;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #e8f4f0;
+}</string>
+             </property>
+             <property name="text">
+              <string>Изображение термина</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="textScrollArea_1">
+             <property name="styleSheet">
+              <string notr="true">QScrollArea {
+    border: 2px solid #364541;
+    border-radius: 15px;
+    background-color: #e8f4f0;
+}</string>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_1">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>521</width>
+                <height>373</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="textLabel_1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Georgia</family>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: none;
+padding: 15px;
+background-color: #e8f4f0;
+color: #2c3e30;
+line-height: 1.4;</string>
+                 </property>
+                 <property name="text">
+                  <string>Выберите термин из списка для просмотра подробного описания и изображения.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QListWidget" name="termsList_2">
+          <property name="styleSheet">
+           <string notr="true">QListWidget {
+    background-color: #f0e8f4;
+    border: 2px solid #4a3654;
+    border-radius: 10px;
+    font-family: &quot;Arial&quot;;
+    font-size: 13px;
+    font-weight: bold;
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Термин</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>термин</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="imageLabel_2">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    font-family: &quot;Arial&quot;;
+    font-size: 18px;
+    color: #4a3654;
+    border: 2px dashed #4a3654;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f0e8f4;
+}</string>
+            </property>
+            <property name="text">
+             <string>Картинка</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit_2">
+            <property name="styleSheet">
+             <string notr="true">QTextEdit {
+    background-color: #f0e8f4;
+    border: 2px solid #4a3654;
+    border-radius: 10px;
+    font-family: &quot;Arial&quot;;
+    font-size: 14px;
+    color: #4a3654;
+    padding: 10px;
+}</string>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:14px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;Определение&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="plainText">
+             <string>Определение</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    font-family: &quot;Courier New&quot;;
+    font-size: 20px;
+    font-weight: bold;
+    color: #354a36;
+    background-color: #e8f4e8;
+    border: 3px solid #354a36;
+    border-radius: 5px;
+    padding: 15px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Группа терминов</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="treeWidget">
+             <property name="styleSheet">
+              <string notr="true">QTreeWidget {
+    background-color: #e8f4e8;
+    border: 2px solid #354a36;
+    border-radius: 8px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 12px;
+}</string>
+             </property>
+             <column>
+              <property name="text">
+               <string>Термин</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Определение</string>
+              </property>
+             </column>
+             <item>
+              <property name="text">
+               <string>термин1</string>
+              </property>
+              <property name="text">
+               <string>лол</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>термин2</string>
+              </property>
+              <property name="text">
+               <string>лол2</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="styleSheet">
+           <string notr="true">QTextBrowser {
+    background-color: #e8f4e8;
+    border: 2px solid #354a36;
+    border-radius: 8px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 13px;
+    color: #2d3b2d;
+}</string>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Courier New'; font-size:13px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:13px;&quot;&gt;Информация о группе терминов&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="plainText">
+           <string>Информация о группе терминов</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
